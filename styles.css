@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --grey-background: #f9fafb;
+    --green-submit:#596D48;
+}
+@font-face {
+    font-family: Norse-Bold;
+    src: url(src/Norse-Bold.otf) format(opentype);
+}
+
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--grey-background);
+    
+}
+
+.relative-title-holder{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    height: 150px;
+    top: 30vh;
+    width: 40vw;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      )
+}
+
+.odin-icon{
+    background: url(src/odin-lined.png) no-repeat center center;
+    background-size: contain;
+    width: 76px;
+    height: 100px;
+    margin: 25px 0 0 0px;
+
+}
+
+.title{
+    padding-top: 45px;
+    padding-left: 15px;
+    color:white;
+    font-family: "Norse-Bold";
+    font-size: 80px;
+}
+
+form{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: var(--grey-background);
+    width: 100%;
+}
+.background-image-holder{
+
+    background: url(src/leaf-background.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 100vh;
+}
+
+form h1{
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+.input-background{
+    padding: 20px 20px 20px 50px;
+    background-color: white;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+.input-container{
+    display: flex;
+    flex-flow: row wrap;   
+    gap:20px;
+ 
+}
+
+.input-row-1{
+    width:350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row-2{
+    width:350px;
+    display: flex;
+    flex-direction: column;
+}
+.call-to-action{
+    padding-bottom: 30px;
+}
+input[type='text'] ,
+input[type='email'],
+input[type='password'],
+input[type = 'tel']{
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+label{
+    
+    color: #5D6063;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+button[type="submit"]{
+    color:white;
+    background-color: var(--green-submit);
+    font-size: 12px;
+    padding: 10px;
+    margin: 50px 0px 0px 50px;
+    border-radius: 5px;
+    border:none var(--green-submit);
+    width: 130px;
+    
+}
+
+input[type = "password"]:invalid,
+input[type = "text"]:invalid{
+    border-color: red;
+}
+
+p{
+    padding-left: 50px;
+}
+
+a{
+    color:var(--green-submit);
+}
